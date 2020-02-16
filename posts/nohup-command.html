@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>GPif's Blog | Quick preview of nohup command</title>
+  <meta name="description" content="Nohup is a command line to start a program from a terminal, and be able to quit the terminal without exiting your program">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="Quick preview of nohup command">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="http://blog.gpif.fr/posts/nohup-command">
+  <meta property="og:description" content="Nohup is a command line to start a program from a terminal, and be able to quit the terminal without exiting your program">
+  <meta property="og:site_name" content="GPif's Blog">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:url" content="http://blog.gpif.fr/posts/nohup-command">
+  <meta name="twitter:title" content="Quick preview of nohup command">
+  <meta name="twitter:description" content="Nohup is a command line to start a program from a terminal, and be able to quit the terminal without exiting your program">
+
+  <!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Quick preview of nohup command | GPif’s Blog</title>
+<meta name="generator" content="Jekyll v3.8.6" />
+<meta property="og:title" content="Quick preview of nohup command" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Nohup is a command line to start a program from a terminal, and be able to quit the terminal without exiting your program" />
+<meta property="og:description" content="Nohup is a command line to start a program from a terminal, and be able to quit the terminal without exiting your program" />
+<link rel="canonical" href="http://blog.gpif.fr/posts/nohup-command" />
+<meta property="og:url" content="http://blog.gpif.fr/posts/nohup-command" />
+<meta property="og:site_name" content="GPif’s Blog" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2020-02-16T00:00:00+00:00" />
+<script type="application/ld+json">
+{"description":"Nohup is a command line to start a program from a terminal, and be able to quit the terminal without exiting your program","@type":"BlogPosting","headline":"Quick preview of nohup command","dateModified":"2020-02-16T00:00:00+00:00","datePublished":"2020-02-16T00:00:00+00:00","url":"http://blog.gpif.fr/posts/nohup-command","mainEntityOfPage":{"@type":"WebPage","@id":"http://blog.gpif.fr/posts/nohup-command"},"@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+  
+    
+      <meta property="og:image" content="http://blog.gpif.fr/assets/documentation/linux-663ad36a2c383e07ff7bcefd15358dfb6f3fdb4e73804c5ed5fc7de423aeb516.jpg">
+      <meta name="twitter:image" content="http://blog.gpif.fr/assets/documentation/linux-663ad36a2c383e07ff7bcefd15358dfb6f3fdb4e73804c5ed5fc7de423aeb516.jpg">
+    
+  
+
+  <link href="http://blog.gpif.fr/feed.xml" type="application/rss+xml" rel="alternate" title="GPif's Blog Last 10 blog posts" />
+
+  
+
+  
+
+    
+      <link rel="icon" type="image/x-icon" href="/assets/favicon-dark-11327753546b2135c989eee5cd83497a2734b702928d016839d795f6c706e3d5.ico">
+      <link rel="apple-touch-icon" href="/assets/apple-touch-icon-dark-d161409442b7e523089f24d08d0a55951549ece7504207c376d53b020713494d.png">
+      <link rel="stylesheet" type="text/css" href="/assets/dark-9fb77058f119b4650018f2b88818d56bffbdf1906845f4a6728bbe13b01ab3c2.css">
+    
+
+  
+
+</head>
+
+<body>
+  <main>
+    <div class="grid grid-centered">
+      <div class="grid-cell">
+        <nav class="header-nav scrollappear">
+  <a href="/" class="header-logo" title="GPif's Blog">GPif's Blog</a>
+  <ul class="header-links">
+    
+      <li>
+        <a href="/about" title="About me">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon-about">
+  <use href="/assets/about-ecf154b571ab8034ae00aeed91a3b7ad68db80b46d958753ad6216c919486e88.svg#icon-about" xlink:href="/assets/about-ecf154b571ab8034ae00aeed91a3b7ad68db80b46d958753ad6216c919486e88.svg#icon-about"></use>
+</svg>
+
+        </a>
+      </li>
+    
+    
+      <li>
+        <a href="https://twitter.com/GPiftw" rel="noreferrer noopener" target="_blank" title="Twitter">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon-twitter">
+  <use href="/assets/twitter-8842c33965263ad1b03a978406826677a668f94125d5837e70ab83f24b3213a7.svg#icon-twitter" xlink:href="/assets/twitter-8842c33965263ad1b03a978406826677a668f94125d5837e70ab83f24b3213a7.svg#icon-twitter"></use>
+</svg>
+
+        </a>
+      </li>
+    
+    
+    
+    
+      <li>
+        <a href="https://github.com/GPif" rel="noreferrer noopener" target="_blank" title="GitHub">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon-github">
+  <use href="/assets/github-094f81040819f34343ee6ffff0980f17e2807b08b595eaaf66ae3554934fd78d.svg#icon-github" xlink:href="/assets/github-094f81040819f34343ee6ffff0980f17e2807b08b595eaaf66ae3554934fd78d.svg#icon-github"></use>
+</svg>
+
+        </a>
+      </li>
+    
+    
+    
+    
+      <li>
+        <a href="https://stackoverflow.com/users/6103484/gpif" rel="noreferrer noopener" target="_blank" title="Stack Overflow">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon-stackoverflow">
+  <use href="/assets/stackoverflow-12ba59133ed134d26156d30f095e0222b6039395cf26f2fab0cb6ce3ef2db00d.svg#icon-stackoverflow" xlink:href="/assets/stackoverflow-12ba59133ed134d26156d30f095e0222b6039395cf26f2fab0cb6ce3ef2db00d.svg#icon-stackoverflow"></use>
+</svg>
+
+        </a>
+      </li>
+    
+    
+    
+    
+      <li>
+        <a href="https://www.linkedin.com/in/guillaume-gillet-dev" rel="noreferrer noopener" target="_blank" title="LinkedIn">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon-linkedin">
+  <use href="/assets/linkedin-cdc5c107044324a3dfbea2e9ead15873f8dee304c37d73a046988956b706256e.svg#icon-linkedin" xlink:href="/assets/linkedin-cdc5c107044324a3dfbea2e9ead15873f8dee304c37d73a046988956b706256e.svg#icon-linkedin"></use>
+</svg>
+
+        </a>
+      </li>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      <li>
+        <a href="/feed.xml" rel="noreferrer noopener" target="_blank" title="RSS">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon-rss">
+  <use href="/assets/rss-541ec5cea9cefd10d2fcfec01888f3f231a8829940249835fa7b7b3a12ae0d0d.svg#icon-rss" xlink:href="/assets/rss-541ec5cea9cefd10d2fcfec01888f3f231a8829940249835fa7b7b3a12ae0d0d.svg#icon-rss"></use>
+</svg>
+
+        </a>
+      </li>
+    
+    
+  </ul>
+</nav>
+
+
+
+        <article class="article scrollappear">
+          <header class="article-header">
+            <h1>Quick preview of nohup command</h1>
+            <p>Nohup is a command line to start a program from a terminal, and be able to quit the terminal without exiting your program</p>
+            <div class="article-list-footer">
+  <span class="article-list-date">
+    February 16, 2020
+  </span>
+  <span class="article-list-divider">-</span>
+  <span class="article-list-minutes">
+    
+    
+      1 minute read
+    
+  </span>
+  <span class="article-list-divider">-</span>
+  <div class="article-list-tags">
+    
+      
+      <a href="/tag/linux" title="See all posts with tag ''"></a>
+    
+      
+      <a href="/tag/command line" title="See all posts with tag ''"></a>
+    
+  </div>
+</div>
+          </header>
+
+          
+            <img src="/assets/documentation/linux-663ad36a2c383e07ff7bcefd15358dfb6f3fdb4e73804c5ed5fc7de423aeb516.jpg">
+          
+
+          <div class="article-content">
+            <h1 id="nohup-to-get-out-of-the-terminal">Nohup, to get out of the terminal</h1>
+
+<p>If you like to run script or program to your desktop from a terminal, but you want to be able to close your terminal without closing your program, you can use the <code class="highlighter-rouge">nohup</code> command.</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">nohup</span> &lt;<span class="nb">command</span><span class="o">&gt;</span> &amp;</code></pre></figure>
+
+<p>The <code class="highlighter-rouge">&amp;</code> is to run the process in bacground.</p>
+
+<p>Only thing, it create a <code class="highlighter-rouge">nouhp.out</code> file to record the <code class="highlighter-rouge">stderr</code>.</p>
+
+<p>To avoid that, you can redirect it to <code class="highlighter-rouge">stdout</code>.</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">nohup</span> &lt;<span class="nb">command</span><span class="o">&gt;</span> <span class="o">&gt;</span>/dev/null 2&gt;&amp;1 &amp;</code></pre></figure>
+
+<p>Do not forget the
+<code class="highlighter-rouge">&amp;</code> in the end.</p>
+
+<p>The process will still be a child process of your terminal. Just, it won’t be killed with it (when the <code class="highlighter-rouge">SIGUP</code> signal is sent).
+It is gloabally fine with most use, but if you need to make it is own process, you can combine your command with the <code class="highlighter-rouge">disown</code></p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">nohup</span> &lt;<span class="nb">command</span><span class="o">&gt;</span> <span class="o">&gt;</span>/dev/null 2&gt;&amp;1 &amp; <span class="nb">disown</span> <span class="nt">-h</span> <span class="s2">"</span><span class="nv">$!</span><span class="s2">"</span></code></pre></figure>
+
+<p>I personnaly use it to run in one script every tool I need for a specific task (start db, run a couple of browser with specific profile, run my IDE etc …)</p>
+
+          </div>
+          <div class="article-share">
+            
+            
+            <a href="https://twitter.com/home?status=Quick+preview+of+nohup+command%20-%20http://blog.gpif.fr/posts/nohup-command%20by%20@GPiftw" title="Share on Twitter" rel="noreferrer noopener" target="_blank">
+              <svg viewBox="0 0 512 512"><path d="M492 109.5c-17.4 7.7-36 12.9-55.6 15.3 20-12 35.4-31 42.6-53.6 -18.7 11.1-39.4 19.2-61.5 23.5C399.8 75.8 374.6 64 346.8 64c-53.5 0-96.8 43.4-96.8 96.9 0 7.6 0.8 15 2.5 22.1 -80.5-4-151.9-42.6-199.6-101.3 -8.3 14.3-13.1 31-13.1 48.7 0 33.6 17.2 63.3 43.2 80.7C67 210.7 52 206.3 39 199c0 0.4 0 0.8 0 1.2 0 47 33.4 86.1 77.7 95 -8.1 2.2-16.7 3.4-25.5 3.4 -6.2 0-12.3-0.6-18.2-1.8 12.3 38.5 48.1 66.5 90.5 67.3 -33.1 26-74.9 41.5-120.3 41.5 -7.8 0-15.5-0.5-23.1-1.4C62.8 432 113.7 448 168.3 448 346.6 448 444 300.3 444 172.2c0-4.2-0.1-8.4-0.3-12.5C462.6 146 479 129 492 109.5z"/></svg>
+            </a>
+            <a href="https://www.facebook.com/sharer/sharer.php?u=http://blog.gpif.fr/posts/nohup-command" title="Share on Facebook" rel="noreferrer noopener" target="_blank">
+              <svg viewBox="0 0 512 512"><path d="M288 192v-38.1c0-17.2 3.8-25.9 30.5-25.9H352V64h-55.9c-68.5 0-91.1 31.4-91.1 85.3V192h-45v64h45v192h83V256h56.4l7.6-64H288z"/></svg>
+            </a>
+          </div>
+
+          
+        </article>
+        <footer class="footer scrollappear">
+  <p>
+  </p>
+</footer>
+
+      </div>
+    </div>
+  </main>
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-155100350-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-155100350-1');
+  </script>
+
+
+<script src="/assets/vendor-2c224c53eb697c739f9490c38819a72184f09472739fd9e492272ef174090428.js" type="text/javascript"></script>
+
+
+  <script src="/assets/webfonts-96493456d319d1bf419afdf8701552d4d486fee6afd304897d4fd81eb4e0cc0b.js" type="text/javascript"></script>
+
+
+
+  <script src="/assets/scrollappear-e2da8ea567e418637e31266cc5302126eaa79f62a2273739086358b589a89ee6.js" type="text/javascript"></script>
+
+
+<script src="/assets/application-cfde13ac81ddaf4351b2e739603e2baf688d0fcc9aba613fe62bbb1c7b037fb9.js" type="text/javascript"></script>
+
+
+</body>
+</html>

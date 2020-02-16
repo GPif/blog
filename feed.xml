@@ -1,20 +1,26 @@
----
----
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="https://www.w3.org/2005/Atom" xmlns:dc="https://purl.org/dc/elements/1.1/">
   <channel>
-    <title>{{ site.name | xml_escape }}</title>
-    <description>{% if site.description %}{{ site.description | xml_escape }}{% endif %}</description>
-    <link>{{ site.url }}</link>
-    <atom:link href="{{ page.path | absolute_url }}" rel="self" type="application/rss+xml" />
-    {% for post in site.posts limit:10 %}
+    <title>GPif's Blog</title>
+    <description></description>
+    <link>http://blog.gpif.fr</link>
+    <atom:link href="http://blog.gpif.fr/feed.xml" rel="self" type="application/rss+xml" />
+    
       <item>
-        <title>{{ post.title | xml_escape }}</title>
-        <description>{{ post.description | xml_escape }}</description>
-        <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
-        <link>{{ post.url | absolute_url }}</link>
-        <guid isPermaLink="true">{{ post.url | absolute_url }}</guid>
+        <title>Quick preview of nohup command</title>
+        <description>Nohup is a command line to start a program from a terminal, and be able to quit the terminal without exiting your program</description>
+        <pubDate>Sun, 16 Feb 2020 00:00:00 +0000</pubDate>
+        <link>http://blog.gpif.fr/posts/nohup-command</link>
+        <guid isPermaLink="true">http://blog.gpif.fr/posts/nohup-command</guid>
       </item>
-    {% endfor %}
+    
+      <item>
+        <title>Being a developer beyong simple code</title>
+        <description>What it means beeing a developer? Far from the mythologie convey by pop culture, a brief description of what it mean nowdays, and what is not only about code anymore</description>
+        <pubDate>Sun, 26 Jan 2020 00:00:00 +0000</pubDate>
+        <link>http://blog.gpif.fr/posts/beyond-a-simple-developer</link>
+        <guid isPermaLink="true">http://blog.gpif.fr/posts/beyond-a-simple-developer</guid>
+      </item>
+    
   </channel>
 </rss>
